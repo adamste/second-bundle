@@ -1,0 +1,3 @@
+com\mycompany\secondbundle\Activator.class
+com\mycompany\secondbundle\TimeService.class
+com\mycompany\secondbundle\TimeServiceSimple.class
