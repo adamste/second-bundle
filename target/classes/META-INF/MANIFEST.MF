@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1514976068634
+Bnd-LastModified: 1514979845166
 Build-Jdk: 1.8.0_144
 Built-By: astepien1
 Bundle-Activator: com.mycompany.secondbundle.Activator
@@ -9,7 +9,7 @@ Bundle-SymbolicName: com.mycompany.SecondBundle
 Bundle-Version: 1.0.0.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
 Export-Package: com.mycompany.secondbundle;uses:="org.osgi.framework,jav
- ax.swing.border,javax.swing";version="1.0.0.SNAPSHOT"
+ ax.swing,javax.swing.border";version="1.0.0.SNAPSHOT"
 Import-Package: javax.swing,javax.swing.border,org.osgi.framework;versio
  n="[1.6,2)"
 Tool: Bnd-1.50.0

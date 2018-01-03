@@ -1,7 +1,13 @@
-com\mycompany\secondbundle\TextPanel.class
-com\mycompany\secondbundle\FormPanel.class
+com\mycompany\secondbundle\Toolbar.class
+com\mycompany\secondbundle\FormListener.class
+com\mycompany\secondbundle\FormPanel$1.class
 com\mycompany\secondbundle\StringListener.class
 com\mycompany\secondbundle\TabService.class
+com\mycompany\secondbundle\MainPanel$1.class
+com\mycompany\secondbundle\MainPanel$2.class
+com\mycompany\secondbundle\TextPanel.class
+com\mycompany\secondbundle\FormPanel.class
+com\mycompany\secondbundle\FormEvent.class
 com\mycompany\secondbundle\Activator.class
 com\mycompany\secondbundle\MainPanel.class
 com\mycompany\secondbundle\TabServiceSimple.class
