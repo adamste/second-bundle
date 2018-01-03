@@ -27,8 +27,10 @@ public class MainPanel extends JPanel {
             public void formEventOccured(FormEvent e){
                 String name=e.getName();
                 String occupation=e.getOccupation();
+                int ageCat=e.getAgeCategory();
                 
-                textPanel.appendText(name + ": "+occupation+"\n"); 
+                textPanel.appendText(name + ": "+occupation+" : "
+                        + ageCat+"\n"); 
             }
         });
         
