@@ -1,3 +1,7 @@
+com\mycompany\secondbundle\TextPanel.class
+com\mycompany\secondbundle\FormPanel.class
+com\mycompany\secondbundle\StringListener.class
+com\mycompany\secondbundle\TabService.class
 com\mycompany\secondbundle\Activator.class
-com\mycompany\secondbundle\TimeService.class
-com\mycompany\secondbundle\TimeServiceSimple.class
+com\mycompany\secondbundle\MainPanel.class
+com\mycompany\secondbundle\TabServiceSimple.class
