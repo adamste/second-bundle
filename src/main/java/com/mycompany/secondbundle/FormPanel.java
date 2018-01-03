@@ -14,7 +14,8 @@ public class FormPanel extends JPanel {
     private JTextField occupationField;
     private JButton okBtn;
     private FormListener formListener;
-
+    private JList ageList;
+            
     public FormPanel() {
         Dimension dimension = getPreferredSize();
         dimension.width = 250;                               
@@ -24,12 +25,25 @@ public class FormPanel extends JPanel {
         occupationLabel = new JLabel("Ocupation: ");
         nameField = new JTextField(10);
         occupationField = new JTextField(10);
+        ageList=new JList();
+        
+        DefaultListModel ageModel=new DefaultListModel();
+        ageModel.addElement("under 18");
+        ageModel.addElement("18 to 65");
+        ageModel.addElement("65 and over");
+        ageList.setModel(ageModel);
+        
+        ageList.setPreferredSize(new Dimension(110, 67));
+        ageList.setBorder(BorderFactory.createEtchedBorder());
+        ageList.setSelectedIndex(1);
+        
         okBtn = new JButton("OK");
         
         okBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                  String name=nameField.getText();
                  String occupation=occupationField.getText();
+                 String ageCat=(String)ageList.getSelectedValue();
                  
                  FormEvent ev=new FormEvent(this, name, occupation);
                  
@@ -82,7 +96,18 @@ public class FormPanel extends JPanel {
         //Third ROW
         gc.weightx = 1;
         gc.weighty = 2;
+        
         gc.gridy = 2;
+        gc.gridx = 1;
+        gc.anchor = GridBagConstraints.FIRST_LINE_START;
+        gc.insets = new Insets(0, 0, 0, 0);
+        add(ageList, gc);
+        
+        //Fourth ROW
+        gc.weightx = 1;
+        gc.weighty = 2;
+        
+        gc.gridy = 3;
         gc.gridx = 1;
         gc.anchor = GridBagConstraints.FIRST_LINE_START;
         gc.insets = new Insets(0, 0, 0, 0);
